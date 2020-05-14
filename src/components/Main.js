@@ -70,13 +70,13 @@ class Main extends Component {
                                  value={product.price}
                                  
                                  onClick={async (event) => {
-
+                                    
                                     let the_price = ethers.utils.formatEther(String(event.target.value))
     
                                     let parsed_price = ethers.utils.parseEther(the_price.toString())
            
                                     this.props.purchaseProduct(event.target.name, parsed_price)
-                                    // console.log(`${ethers.utils.formatEther(String(event.target.value))}`)
+                                   
                                  }} 
                                  >
                                      Buy
