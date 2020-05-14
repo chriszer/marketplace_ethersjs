@@ -65,7 +65,8 @@ class Main extends Component {
                             <td>{product.owner}</td>
                             <td>
                              { !product.purchased
-                               ? <button
+                               ? 
+                                 <button
                                  name={product.id}
                                  value={product.price}
                                  
