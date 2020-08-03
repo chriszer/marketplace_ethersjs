@@ -14,7 +14,7 @@ class Main extends Component {
                     event.preventDefault()
                     const name  = this.productName.value
                     // insert ether amount
-                    const price = ethers.utils.parseEther(String(this.productPrice.value));
+                    const price = ethers.utils.parseEther(this.productPrice.value).toString(10);
                    
                     this.props.createProduct(name , price)
                 }}>
