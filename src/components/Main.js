@@ -72,7 +72,7 @@ class Main extends Component {
                                  
                                  onClick={async (event) => {
                                     
-                                    let the_price = ethers.utils.formatEther(String(event.target.value))
+                                    let the_price = ethers.utils.formatEther(event.target.value)
     
                                     let parsed_price = ethers.utils.parseEther(the_price.toString())
            
