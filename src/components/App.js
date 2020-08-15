@@ -21,8 +21,7 @@ class App extends Component {
    this.setState({ account: accounts[0] })
 
   //  const networkId = await web3.eth.net.getId()
-   const networkData = await (await provider.getNetwork()).chainId
-   console.log(networkData)
+   const networkData = Marketplace.networks['5777']
 
    if(networkData){
     
@@ -30,7 +29,7 @@ class App extends Component {
     let signer = provider.getSigner(0)
 
     //declare and fetch the deployed contract address
-    let address = Marketplace.networks[networkData].address
+    let address = Marketplace.networks['5777'].address
 
     //declare and fetch the abi
     let abi = Marketplace.abi
