@@ -7,4 +7,4 @@ soon I will add documentation on it for now you can analyze the code for your le
   `npm install ethers`
   
 2. import the ethersjs in both the App.js and Main.js files
-   ![images/Picture1.png]
+   ![](images/Picture1.png)
