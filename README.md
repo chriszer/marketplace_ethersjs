@@ -10,7 +10,8 @@ soon I will add documentation on it for now you can analyze the code for your le
    ![](images/Picture1.png)
 
 3. remove the `loadWeb3()` function because we will create the connection and access blockchain data to   read and write inside loadBlockchainData() function:
-    ![](images/Picture2.png)
+    
+   ![](images/Picture2.png)
 
 4. at this step in App.js file we will work on converting the code to ethersjs inside the `loadBlockchain()` function:
 
@@ -38,12 +39,15 @@ soon I will add documentation on it for now you can analyze the code for your le
 
 
     •	inside the if(networkData) put these code inside:
+    
       ![](images/Picture3.png)
 
 5.	inside the `createProduct(`) and `purchaseProduct()` function change this code:
+
       ![](images/Picture4.png)
 
       To This Code:
+      
       ![](images/Picture5.png)
 
 6. In Main.js find the code and convert it into the following:
@@ -59,9 +63,11 @@ soon I will add documentation on it for now you can analyze the code for your le
     <td>{ethers.utils.formatEther(String(product.price))} Eth</td>
 
     From:
-     ![](images/Picture6.png)
+    
+    ![](images/Picture6.png)
 
     To:
+    
     ![](images/Picture7.png)
 
 6.	It’s done!  Now try running it up again:
