@@ -52,14 +52,16 @@ soon I will add documentation on it for now you can analyze the code for your le
 
 6. In Main.js find the code and convert it into the following:
       
-           From:
+    From:
     const price = window.web3.utils.toWei(this.productPrice.value.toString(),'Ether')
-           To:
+    
+    To:
     const price = ethers.utils.parseEther(this.productPrice.value).toString(10);
 
-           From:
+    From
     <td>{window.web3.utils.fromWei(product.price.toString(),'Ether')} Eth</td>
-           To:
+    
+    To:
     <td>{ethers.utils.formatEther(String(product.price))} Eth</td>
 
     From:
