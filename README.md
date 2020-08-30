@@ -58,7 +58,7 @@ soon I will add documentation on it for now you can analyze the code for your le
     To:
     const price = ethers.utils.parseEther(this.productPrice.value).toString(10);
 
-    From
+    From:
     <td>{window.web3.utils.fromWei(product.price.toString(),'Ether')} Eth</td>
     
     To:
